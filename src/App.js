@@ -23,8 +23,8 @@ const awayfg = e => {
 };
 
 //team name hooks
-const [homeTeam, setsHomeScore] = useState('Lions');
-const [awayTeam, setsAwayScore] = useState('Tigers');
+const [homeTeam] = useState('Lions');
+const [awayTeam] = useState('Tigers');
 
   return (
     <div className="container">
