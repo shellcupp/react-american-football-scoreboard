@@ -1,30 +1,25 @@
-//TODO: STEP 1 - Import the useState hook.
-import React, {useState} from "react";
+// TODO: STEP 1 - Import the useState hook.
 import "./App.css";
+
+import React, {useState} from "react";
+
 import BottomRow from "./BottomRow";
 
 function App() {
-  //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
-const [homeScore, setHomeScore] = useState(0);
-const [awayScore, setAwayScore] = useState(0);
+  // TODO: STEP 2 - Establish your applictaion's state with some useState hooks.
+  // You'll need one for the home score and another for the away score.
+  const [homeScore, setHomeScore] = useState(0);
+  const [awayScore, setAwayScore] = useState(0);
 
-//if they score
-const hometd = e => {
-  setHomeScore(homeScore + 7);
-};
-const homefg = e => {
-  setHomeScore(homeScore + 3);
-};
-const awaytd = e => {
-  setAwayScore(awayScore + 7);
-};
-const awayfg = e => {
-  setAwayScore(awayScore + 3);
-};
+  // if they score
+  const hometd = e => { setHomeScore(homeScore + 7); };
+  const homefg = e => { setHomeScore(homeScore + 3); };
+  const awaytd = e => { setAwayScore(awayScore + 7); };
+  const awayfg = e => { setAwayScore(awayScore + 3); };
 
-//team name hooks
-const [homeTeam] = useState('Lions');
-const [awayTeam] = useState('Tigers');
+  // team name hooks
+  const [homeTeam] = useState('Lions');
+  const [awayTeam] = useState('Tigers');
 
   return (
     <div className="container">
